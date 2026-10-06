@@ -10,4 +10,5 @@ the browser calls the API through the public `/api` route.
 
 Use `vercel dev` to run the configured services together locally.
 
-Demo video: https://youtu.be/WZDGvck8xzY
+Demo video: https://youtu.be/rM7uBcjKabI
+^^forgot not to record audio. Video is not available in Russia and Belarus
