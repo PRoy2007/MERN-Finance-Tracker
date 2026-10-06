@@ -1,0 +1,87 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+  padding: 2rem 1rem;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 0.6rem 1rem;
+  background: #2563eb;
+  color: white;
+  font-size: 0.95rem;
+}
+button:hover { background: #1d4ed8; }
+
+input, select {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.error { color: #dc2626; margin-bottom: 1rem; }
+
+/* Auth pages */
+.auth-card {
+  max-width: 380px;
+  margin: 4rem auto;
+  background: white;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+.auth-card h2 { margin-bottom: 1rem; }
+.auth-card form { display: flex; flex-direction: column; gap: 0.75rem; margin-bottom: 1rem; }
+
+/* Dashboard */
+.dashboard { max-width: 800px; margin: 0 auto; }
+.dashboard header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem; }
+
+.summary { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin-bottom: 1.5rem; }
+.card {
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+.card span { font-size: 0.85rem; color: #666; }
+.card strong { font-size: 1.4rem; }
+.card.income strong { color: #16a34a; }
+.card.expense strong { color: #dc2626; }
+
+.tx-form { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 1.5rem; }
+.tx-form input, .tx-form select { flex: 1 1 140px; }
+
+.tx-list { list-style: none; display: flex; flex-direction: column; gap: 0.5rem; }
+.tx-list li {
+  background: white;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-left: 4px solid;
+}
+.tx-list li.income { border-color: #16a34a; }
+.tx-list li.expense { border-color: #dc2626; }
+.tx-list small { display: block; color: #888; margin-top: 0.2rem; }
+.tx-right { display: flex; align-items: center; gap: 0.75rem; }
+.tx-list li.income .amount { color: #16a34a; }
+.tx-list li.expense .amount { color: #dc2626; }
+.tx-right button { background: transparent; color: #999; padding: 0.3rem 0.5rem; }
+.tx-right button:hover { color: #dc2626; background: #fee2e2; }
+
+.empty { color: #888; text-align: center; padding: 2rem; }
+
+@media (max-width: 600px) {
+  .summary { grid-template-columns: 1fr; }
+}
