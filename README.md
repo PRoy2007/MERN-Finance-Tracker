@@ -1,5 +1,10 @@
 Learning MERN stack: an MVP finance tracker.
 
+Demo video: https://youtu.be/rM7uBcjKabI <--forgot not to record audio. Video is not available in Russia and Belarus
+
+link: https://mern-finance-tracker-khq6-zeta.vercel.app/login
+
+
 ## Deploying on Vercel
 
 The root `vercel.json` configures the `client` (Vite) and `server` (Express)
@@ -9,6 +14,3 @@ environment settings for the server service. No service bindings are needed:
 the browser calls the API through the public `/api` route.
 
 Use `vercel dev` to run the configured services together locally.
-
-Demo video: https://youtu.be/rM7uBcjKabI
-^^forgot not to record audio. Video is not available in Russia and Belarus
